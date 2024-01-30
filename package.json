@@ -1,14 +1,15 @@
 {
-  "name": "cypress1",
+  "name": "Cypress",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "cypress:open:chrome": "npx cypress run -b chrome --headed",
     "cybopress:open:firefox": "npx cypress run -b firefox --headed",
-    "cypress:run:chrome": "npx cypress run -b chrome --headed --spec cypress/e2e/e2e.cy.js",
+    "cypress:run:chrome": "npx cypress run -b chrome --headed --spec cypress/e2e/api-headers.cy.js",
     "cypress:run:firefox": "npx cypress run -b firefox",
     "cypress:run:chrome:simple": "npx cypress run"
+    "cypress:run:chrome:test:api": "npx cypress run -b chrome --headed --spec 'cypress/e2e/api-*.cy.js'"
   },
   "keywords": [],
   "author": "",
